@@ -1,10 +1,10 @@
-array = [1, 2, 3, 4, 5, 6, 7];
-array.forEach((element) => {
+arr = [1, 2, 3, 4, 5, 6, 7];
+arr.forEach((element) => {
     console.log(element + element);
 });
 console.log();
 //for...of loop access the element of the objects/array
-for (let t of array) {
+for (let t of arr) {
     console.log(t);
 }
 console.log();
