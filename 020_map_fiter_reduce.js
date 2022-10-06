@@ -30,3 +30,10 @@ let d = arr.filter((a) => {
     return a < 3;
 });
 console.log(d);
+
+
+const reduce_fun = (a1,a2,) => {//We can use the function as variable inside javascript
+    return a1+a2;
+};
+let e = arr.reduce(reduce_fun);//It will reduce the array to a single element by performing the actions given to it on the all of the elements inside the array
+console.log(e);
