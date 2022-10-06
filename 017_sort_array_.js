@@ -8,3 +8,6 @@ compare = (a, b) => {
 let array2 = [1, 123, 64, 7, 25, 8, 54, 745, 255];
 array2.sort(compare);
 console.log(array2);
+
+array2.reverse();//just name explains everything
+console.log(array2);
