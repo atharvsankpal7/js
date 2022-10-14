@@ -6,7 +6,9 @@ let b,
 while (a != b) {
     b = prompt("Guess the number -->");
     c++;
-    a < b ? console.log("The number is shorter than your guess"): console.log("The number is larger than your guess");
+    a < b
+        ? console.log("The number is shorter than your guess")
+        : console.log("The number is larger than your guess");
     if (c == 10) {
         console.log("You took all of your guess, you loose");
         break;
@@ -15,3 +17,4 @@ while (a != b) {
 if (a == b) {
     console.log("You scored", 100 - c);
 }
+
