@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.yellow{
+    background-color: yellow;
+    color: red;
+}
+.red{
+    background-color: red;
+    color: yellow;
+}
+.black{
+    background-color: black;
+    color: whitesmoke;
+}

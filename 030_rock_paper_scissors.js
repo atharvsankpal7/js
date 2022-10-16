@@ -1,6 +1,6 @@
 const prompt = require("prompt-sync")();
 let choicep, choicec;
-let input = prompt("Enter the 1 for rock 2 for scissors and 3 for paper :");
+let input = prompt("Enter the 1 for rock 2 for scissors and 3 for paper : ");
 input == 1
     ? (choicep = "rock")
     : input == 2
