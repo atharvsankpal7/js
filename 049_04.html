@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+       
+        .on {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+       #thisisdiv{
+          width: 100px;
+            height: 100px;
+       }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div style="display: grid; grid-template-rows: auto 50px; justify-items:center ;">
+
+            <div id="thisisdiv" class="on off" style="margin: auto;"></div><button id="thisisbutton" style="width: 50px; height: 25px;">switch</button>
+        </div>
+    </main>
+</body>
+
+</html>
+<script>
+
+    let a = document.getElementById("thisisbutton");
+    let b = document.getElementById("thisisdiv");
+    let func = function () {
+        b.classList.toggle("on");
+    }
+    a.addEventListener('click', func)
+</script>

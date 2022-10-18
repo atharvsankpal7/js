@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My bookmarked websites</title>
+</head>
+<style>
+    .liinsideul {
+        margin: auto;
+        list-style: none;
+    }
+
+    .divinsidecontainer {
+        width: auto;
+        height: 100px;
+        background-color: red;
+
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul style="display: flex">
+                <li class="liinsideul">Home</li>
+                <li class="liinsideul">About</li>
+                <li class="liinsideul">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="container"
+            style="display: grid ; grid-template-columns: 200px 200px ; column-gap: 50px; row-gap: 50px; justify-content: space-evenly;">
+            <div id="one" class="divinsidecontainer">
+                <a href="https://www.keybr.com/" target="_blank">
+                    <span>click here to go on keybr website</span>
+                </a>
+            </div>
+            <div id="two" class="divinsidecontainer">
+                <a href="https://github.com/ossu/data-science" target="_blank">
+                    <span>click here to go on github website</span>
+                </a>
+            </div>
+            <div id="three" class="divinsidecontainer">
+                <a href="https://cplusplus.com/" target="_blank">
+                    <span>click here to go on c++ website</span>
+                </a>
+            </div>
+            <div id="four" class="divinsidecontainer">
+                <a href="https://weworkremotely.com/" target="_blank">
+                    <span>click here to go on weworkremotely website</span>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
