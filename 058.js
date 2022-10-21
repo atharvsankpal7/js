@@ -8,7 +8,8 @@ let p1 = new Promise((resolve, reject) => {
 let p2 = new Promise((resolve, reject) => {
     setTimeout(() => {
         // console.log("This is promise two");
-        reject(new Error("Error"));
+        resolve("Hello")
+        // reject(new Error("Error"));
     }, 2000);
 });
 let p3 = new Promise((resolve, reject) => {
