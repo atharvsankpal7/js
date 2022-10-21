@@ -19,14 +19,19 @@
 function loadscript(source, callback_function) {
     let script = document.createElement("script");
     script.src = source;
-    
+    script.onload = function () {
+        console.log("The script loaded", source);
+    };
+    script.onerror = function () {
+        console.log("Error loading", source);
+    };
     document.body.appendChild(script);
     callback_function();
 }
-loadscript(
-    "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js",
-    hello
-);
+// loadscript(
+//     "https://cdn.jsdasdfelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js",
+//     hello
+// );
 loadscript(
     "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js",
     bye
